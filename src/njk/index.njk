@@ -1,19 +1,15 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}Queen{% endblock %}
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By {% for author in authors %}
-      <a href="{{ author.link }}" target="_blank">{{ author.name }}</a>{% if not loop.last %}{% if loop.revindex0 == 1 %} and {% else %}, {% endif %}{% endif %} {% endfor %}
-      <br> Published {{ publish_date }}
-    </p>
-    </div>
+<div class="jumbotron"> 
+  <div class="inner-div">
   </div>
+</div>
+
+
   <div class="row">
     <div class="col">
       <p>
