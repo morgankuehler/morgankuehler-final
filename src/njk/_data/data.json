@@ -1,16 +1,3 @@
 {
-  "books": [
-    {
-      "title": "The Clown",
-      "author": "Heinrich Böll"
-    },
-    {
-      "title": "The Shipping News",
-      "author": "Annie Proulx"
-    },
-    {
-      "title": "The Hearing Trumpet",
-      "author": "Leonora Carrington"
-    }
-  ]
+
 }
