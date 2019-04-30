@@ -10,12 +10,35 @@
 </div>
 
 
+<div class = "container">
   <div class="row">
-    <div class="col">
+    <div class="col-lg">
       <p>
-        Queen are a band that formed in London in 1970. They became very popular in the 1970s and 80s with hits like "Bohemian Rhapsody", "We Will Rock You", and "Another One Bites the Dust." The origional members were <a href="freddie.html">Freddie Murcury</a>, <a href="brian.html">Brian May</a>, <a href="roger.html">Roger Taylor</a>, and <a href="john.html">John Deacon</a>.
+        Queen are a band that formed in London in 1970. They became very popular in the 1970s and 80s with hits like "Bohemian Rhapsody", "We Will Rock You", and "Another One Bites the Dust." The original members were <a href="freddie-mercury.html">Freddie Murcury</a>, <a href="brian-may.html">Brian May</a>, <a href="roger-taylor.html">Roger Taylor</a>, and <a href="john-deacon.html">John Deacon</a>.
       </p>
     </div>
   </div>
+
+<h4> Members: </h4>
+<div class="member row section">
+ {% for member in data.members %}
+  <div class="col-sm-3">
+    <div class="card">
+      <img class="card-img-top-members" src="img/members/{{member.imagebw}}" alt="Card image cap Members">
+      <div class="member-card-body">
+        <h3 class="member-card-title">{{member.name}}</h3>
+        <p class="member-card-text"> {{member.instruments}} </p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<div>
+  <h4><a href="disc.html"> Discography </a> </h4>
+</div>
+
+</div>
+
 
 {% endblock %}
