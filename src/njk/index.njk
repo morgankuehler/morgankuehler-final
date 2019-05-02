@@ -13,6 +13,7 @@
 <div class = "container">
   <div class="row">
     <div class="col-lg">
+      <h1 class= "headline">Queen: The Greatest Band of All Time </h1>
       <p>
         Queen are a band that formed in London in 1970. They became very popular in the 1970s and 80s with hits like "Bohemian Rhapsody", "We Will Rock You", and "Another One Bites the Dust." The original members were <a href="freddie-mercury.html">Freddie Murcury</a>, <a href="brian-may.html">Brian May</a>, <a href="roger-taylor.html">Roger Taylor</a>, and <a href="john-deacon.html">John Deacon</a>.
       </p>
@@ -24,7 +25,9 @@
  {% for member in data.members %}
   <div class="col-sm-3">
     <div class="card">
-      <img class="card-img-top-members" src="img/members/{{member.imagebw}}" alt="Card image cap Members">
+      <a href= {{member.slug}}.html>
+      <img class="img-fluid" src="img/members/{{member.imagebw}}" alt="Card image cap Members">
+      </a>
       <div class="member-card-body">
         <h3 class="member-card-title">{{member.name}}</h3>
         <p class="member-card-text"> {{member.instruments}} </p>

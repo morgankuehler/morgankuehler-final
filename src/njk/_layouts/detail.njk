@@ -5,13 +5,14 @@
   <div class="row">
     <div class="col-sm-4 left-rail">
       <h1>{{members.name}}</h1>
-      <img class="member-image" src="img/members/{{members.image}}" alt="Member Image">
-      <h4>Insturments: {{members.instruments}}</h4>
-      <h4>Tenure: {{members.tenure}}</h4>
-      <h4>Birth: {{members.birthday}}, {{members.birthplace}}</h4>
+      <img src="img/members/{{members.image}}" alt="Member Image" class="img-fluid">
     </div>
     <div class="col-sm-8">
-      <p> {{ members.text | safe}} </p>
+      <h5> <b>Insturments: </b> {{members.instruments}}</h5>
+      <h5> <b> Tenure: </b> {{members.tenure}}</h5>
+      <h5> <b> Birth: </b> {{members.birthdate}} , {{members.birthplace}}</h5>
+        <p> <b> Biography: </b> </p>
+        <p> {{ members.text | safe}} </p>
     </div>
   </div>
 </article>
