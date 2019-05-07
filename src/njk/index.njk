@@ -15,7 +15,7 @@
     <div class="col-lg">
       <h1 class= "headline">Queen: The Greatest Band of All Time </h1>
       <p>
-        Queen are a band that formed in London in 1970. They became very popular in the 1970s and 80s with hits like "Bohemian Rhapsody", "We Will Rock You", and "Another One Bites the Dust." The original members were <a href="freddie-mercury.html">Freddie Murcury</a>, <a href="brian-may.html">Brian May</a>, <a href="roger-taylor.html">Roger Taylor</a>, and <a href="john-deacon.html">John Deacon</a>.
+        Queen are a band that formed in London in 1970. They became very popular in the 1970s and 80s with hits like "Bohemian Rhapsody", "We Will Rock You", and "Another One Bites the Dust." The original members were <a href="freddie-mercury.html">Freddie Mercury</a>, <a href="brian-may.html">Brian May</a>, <a href="roger-taylor.html">Roger Taylor</a>, and <a href="john-deacon.html">John Deacon</a>.
       </p>
     </div>
   </div>
@@ -23,7 +23,7 @@
 <h4> Members: </h4>
 <div class="member row section">
  {% for member in data.members %}
-  <div class="col-sm-3">
+  <div class="col-sm-6 col-md-3">
     <div class="card">
       <a href= {{member.slug}}.html>
       <img class="img-fluid" src="img/members/{{member.imagebw}}" alt="Card image cap Members">
@@ -38,7 +38,27 @@
 </div>
 
 <div>
-  <h4><a href="disc.html"> Discography </a> </h4>
+<h4> Discography: </h4>
+
+<div class= 'container'>
+<div class="row">
+
+ {% for disc in data.discography %}
+
+  <div class="col-sm-6 col-md-4">
+    <div class= "card mb-3" >
+      <img class="card-img-top" src="img/discs/{{disc.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">{{disc.title}}</h3>
+        <p class="card-text"> {{disc.year}} </p>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+
+</div>
+
 </div>
 
 </div>

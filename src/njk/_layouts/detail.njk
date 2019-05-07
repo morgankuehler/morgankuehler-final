@@ -11,8 +11,9 @@
       <h5> <b>Insturments: </b> {{members.instruments}}</h5>
       <h5> <b> Tenure: </b> {{members.tenure}}</h5>
       <h5> <b> Birth: </b> {{members.birthdate}} , {{members.birthplace}}</h5>
-        <p> <b> Biography: </b> </p>
-        <p> {{ members.text | safe}} </p>
+         <div>
+         {{ members.text | safe}}
+         </div>
     </div>
   </div>
 </article>
